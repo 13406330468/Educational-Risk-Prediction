@@ -1,0 +1,27 @@
+{
+  "name": "Experiment 4 supplemental sensitivity analyses",
+  "status": "analysis definitions fixed before supplemental result computation",
+  "original_primary_protocol_unchanged": true,
+  "primary_landmarks": [7, 14, 28],
+  "base_models": ["logistic", "lightgbm"],
+  "common_pair_analysis": {
+    "population": "intersection of pairs estimable at all three primary landmarks",
+    "seed_alignment": "retain only pair-seed combinations estimable at all three landmarks in both models",
+    "aggregation": "average retained seeds within each pair/day/model, then equal-weight pairs",
+    "measures": ["G_T", "G_T_star", "A", "G_T_star_intercept", "target_extra_slope_gain"],
+    "contrasts": ["day7_minus_day14", "day14_minus_day28", "day7_minus_day28"],
+    "uncertainty": "2000 joint resamples of provider plus base-course clusters, preserving all pairs and days in sampled clusters",
+    "interpretation": "associational temporal pattern within supported pair-seeds, not a causal effect of observation time"
+  },
+  "unique_user_course_analysis": {
+    "assignment": "among eligible base courses a username entered, keep the base course of their earliest observed enrollment event; break ties lexicographically by provider and base-course token",
+    "outcome_blind_assignment": true,
+    "population": "original primary target-active-unseen predictions at days 7, 14, 28, filtered to usernames assigned to that pair's base course",
+    "models_and_calibrators": "use saved frozen primary predictions; no base-model or calibrator refitting",
+    "aggregation": "average seeds within pair/day/model, then equal-weight pairs on the original support units",
+    "uncertainty": "2000 joint resamples of provider plus base-course clusters, comparing restricted and original outcomes in each resample",
+    "minimum_retained_support": "no post hoc exclusion; report count below original target N>=50 and each class>=10 thresholds",
+    "interpretation": "conditional evaluation-level student deduplication; does not remove shared training or calibration users across courses"
+  },
+  "bootstrap_seed": 20261002
+}

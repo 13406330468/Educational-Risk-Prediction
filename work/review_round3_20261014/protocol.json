@@ -1,0 +1,21 @@
+{
+  "version": "2026-10-14-r3-v1",
+  "status": "Post-review exploratory sensitivity analyses; specified before new fits, not preregistered",
+  "days": [7, 14, 28],
+  "seeds": [17, 29, 43, 59, 71],
+  "models": ["logistic", "lightgbm"],
+  "baseline": "Fresh raw ZIP -> enrollment audit -> anchors/features -> explicit next-7-day outcome -> structural 81-pair pool -> all supported pair and three-presentation refits. Reuse published algorithms, no reuse of old features or fitted predictions. This is independent execution, not independent implementation or external replication.",
+  "endpoint": "Y=1 if no observed event in (anchor+d, anchor+d+7]; observed course span must cover endpoint. This does not validate dropout or completeness of provider logging.",
+  "recent": "At every source fitting/evaluation role and T1/T2 evaluation, require an observed event in (anchor+d-7, anchor+d]. Source role assignment remains the baseline enrollment-level stratified 60/20/20 split using the new outcome; recent activity then restricts each role. All vocabulary, preprocessing, predictor, calibration and OOF fits are repeated. No change to source-only hyperparameters or support cutoffs.",
+  "joint": "Use explicit new outcome and the structural 81-pair pool. Globally assign each user to the eligible provider/base-course with earliest observed enrollment event, breaking ties lexically. Retain all presentations of that one base course. Assignment precedes source roles and every fit; uses no labels. This changes the population and does not correct all original-population intervals. Recent-activity restriction is a separate sensitivity, not crossed with assignment.",
+  "identity_boundary": "T1 excludes every S-presentation user; T2 excludes every S or T1 user, including those not active or used to fit models. Across-course identity audit uses the full original rosters conservatively.",
+  "update": "Frozen S predictor; historical full-source-calibration Platt versus T1 full Platt, fixed-historical-slope intercept, count-weighted parameter shrinkage. Original nested unstratified budgets 0.1,0.2,0.5,1 and seeds. No T2 label enters fitting or tuning. Matched S/T1 label-count sensitivity also rerun with the published procedure.",
+  "support": "Published thresholds unchanged: source train minority>=5, validation minority>=2, calibration N>=30 and minority>=10; target/T1/T2 N>=50 and minority>=10. Update budget N>=10 and both classes, no redraw. All structural candidate/day/seed attempts and failure reasons retained.",
+  "aggregation": "Average seeds within pair or triple, then equal weight to those units. Cluster bootstrap by provider/base-course, 100000 draws, seed 20261012; pointwise intervals. A has a 12-contrast family (2 new sensitivities x 3 days x 2 models); U has separate 6-full-budget and 96-strategy/budget families within each sensitivity. These are approximate multiplicity sensitivities, not exact confirmatory guarantees.",
+  "heterogeneity": "All base-course mean U and leave-one-base-course-out macro U, all methods and budgets. Report sign shares, range and largest changes; no deletion selected to improve a result.",
+  "absolute_performance": "T2 event prevalence, raw/historical/full/intercept/shrink Brier, recent-rate null Brier, U and uncertainty, counts. All averages are macro averages, not pooled sample-weighted estimates.",
+  "comparability": "Also compare baseline and each sensitivity on common supported pair/triple/day/seed/model jobs. Differences remain population-and-refitting sensitivities, not causal effects.",
+  "reproduction_checks": "Compare raw audit counts, feature tables, endpoint tables, support keys, pair/rollout scores, conservative and matched scores to frozen previous outputs. Record observed numeric deviations, not assumed equality; investigate any discrepancy before reporting success.",
+  "limitations": "Course-cluster intervals condition on completed fits; no full pipeline bootstrap. Base-course identifiers and timing are inferred from logs. Same-base presentations are not independently sampled. No inference of equivalence from intervals covering zero.",
+  "delivery": "Aggregate report, tables, plots, protocol and runnable extension source; learner IDs and prediction caches remain private. Manuscript and existing submission package unchanged during experiment stage."
+}

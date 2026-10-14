@@ -1,0 +1,370 @@
+{
+  "version": "2026.10.14",
+  "date": "2026-10-14",
+  "public_repository": "https://github.com/13406330468/Educational-Risk-Prediction",
+  "commit": null,
+  "identity_note": "The actual commit is assigned when uploaded; file checksums identify this distribution.",
+  "total_files_including_manifest": 69,
+  "aggregate_payloads": 170,
+  "frozen_archive_sha256": "22ad313f237dd62b8e86a09eaf87cbc3f6aaa18467e6cd76a525252dc1ebd4e3",
+  "scientific_code_files_unchanged": 51,
+  "unpacked_frozen_files": {
+    "frozen/aggregate_results.json": {
+      "bytes": 38422454,
+      "sha256": "9e4b50aa0dcad06d94904a813a102cfe001fe11647e447767841b078f113b98e"
+    },
+    "frozen/evidence_registry.json": {
+      "bytes": 9361582,
+      "sha256": "bbda912e1ec868d4980963206e7a74ee9c2f1df4463a391caa47774e68f754d1"
+    }
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 284,
+      "sha256": "945091a33913961830ad2300f1ed1bf3e8a4f9c9591c4eb1d3eac4370c7c1805"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 1549,
+      "sha256": "1b937ba4c58e4ad96d5cbab67e7cf0e43556eee8b0b0ae1aef8082fd602d00eb"
+    },
+    {
+      "path": "docs/artifact_map.csv",
+      "bytes": 6505,
+      "sha256": "d7fe0b9fc88fc97efa42cf8aaa23e66c2c7f418b84a0d81c4771636a1737992e"
+    },
+    {
+      "path": "docs/author_information.csv",
+      "bytes": 843,
+      "sha256": "00e2b766543c4c7a92433203b149a468f243745be07ea83445c5d7184acab70f"
+    },
+    {
+      "path": "docs/feature_schema.csv",
+      "bytes": 47201,
+      "sha256": "edaee42a734580a001de2f14335939238bdafc3b62a6d0d42d696027a63a472f"
+    },
+    {
+      "path": "docs/figure1_provenance.txt",
+      "bytes": 452,
+      "sha256": "6cd67d6555e65ea0a74848f88109dee5cf525e10adb8e9ca558412b2eadcdaf5"
+    },
+    {
+      "path": "docs/PORTABILITY_AND_LICENSES.md",
+      "bytes": 2978,
+      "sha256": "5b9a0041a243098a5be3e27e38d4224735b9caeb6de5bc7e137837a0148a89ae"
+    },
+    {
+      "path": "docs/protocol_and_seeds.md",
+      "bytes": 6956,
+      "sha256": "bfe3449feab06446ed9ee0e2d5b4ef8bc4b873d9314afffa16336cf39c02a7b4"
+    },
+    {
+      "path": "docs/VALIDATION.json",
+      "bytes": 30455,
+      "sha256": "4f58e0b9e61659304d25d114f69c92ded7816a9a4ba76e5ec3991d725a8f54d7"
+    },
+    {
+      "path": "Frozen_Results.zip",
+      "bytes": 12263339,
+      "sha256": "22ad313f237dd62b8e86a09eaf87cbc3f6aaa18467e6cd76a525252dc1ebd4e3"
+    },
+    {
+      "path": "paper/figure1.pdf",
+      "bytes": 91785,
+      "sha256": "0dcc5a54def4171c940b6da0c20c58f512b6372daabb970e4d048cd678872c9d"
+    },
+    {
+      "path": "paper/Figure1_Editable.pptx",
+      "bytes": 27692,
+      "sha256": "33e3ab89afeffa0f1f11849c92b973b0929ecadc71aac4b30c58ce8f5a71eb81"
+    },
+    {
+      "path": "paper/LaTeX_Source.zip",
+      "bytes": 7301954,
+      "sha256": "8f740815ef3eb65756ac5b4d935fdb004f5eb560e92a4a479644448c62ac6107"
+    },
+    {
+      "path": "paper/main.pdf",
+      "bytes": 3451032,
+      "sha256": "5dc5874b38062e6a36e1236033f91098f54ac56413f8885450cddb250e6b9bda"
+    },
+    {
+      "path": "paper/supplement.pdf",
+      "bytes": 456184,
+      "sha256": "52da7acd4ed234b562b65b787c7ddf54bac4adc25d8067ce6db4acec297d1a17"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9540,
+      "sha256": "b77c8908c5b9af74afba1dc6aac6493f1ab0694a8260f7620768ac510c514501"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 3848,
+      "sha256": "216b8ea2c3b4d23dd3a5b679dfced68432a0867698f1d967068b82d731abe59f"
+    },
+    {
+      "path": "reproduce.py",
+      "bytes": 16819,
+      "sha256": "366a6ad7c595dc7b33b453186fc07579856c36fc297a7dd3a319027a627db700"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 391,
+      "sha256": "2fc25c2f181417f566c79b15217ccb1677059a298fac5fa00159796dec689023"
+    },
+    {
+      "path": "tests/test_runtime_integrity.py",
+      "bytes": 5663,
+      "sha256": "82c9aa52b92ea7a9c662b39815f71cec7428c27a8d8d5593e7c09435f2992905"
+    },
+    {
+      "path": "work/manuscript/make_figures.py",
+      "bytes": 4550,
+      "sha256": "7bf2bf2d51637d40462a9ccd07774e83baa01cdec3bca61d85ce96d5f6908c77"
+    },
+    {
+      "path": "work/oulad_experiment/audit_and_summarize.py",
+      "bytes": 13511,
+      "sha256": "916a42ae98cb923e35592c205b85d3ff177ea8de6b600a18a730673a8a5f39a5"
+    },
+    {
+      "path": "work/oulad_experiment/dfmc.py",
+      "bytes": 10091,
+      "sha256": "f6339866b5306832ae7cbd3bc353de73f71f83bd3f9e80dd245d6827db0d1e57"
+    },
+    {
+      "path": "work/oulad_experiment/prepare.py",
+      "bytes": 20057,
+      "sha256": "59639f37ee80237731895064de3735481d7aef0ce2b71b6acb2c81f73410f265"
+    },
+    {
+      "path": "work/oulad_experiment/protocol.json",
+      "bytes": 2871,
+      "sha256": "a4aa94aadba528e394df7677b02dc338fa9a887411a0c69f3d3a642d49976452"
+    },
+    {
+      "path": "work/oulad_experiment/run_experiment.py",
+      "bytes": 19011,
+      "sha256": "0f586e4776fb3b8eb5c7734f909cec3a5a6ce1c9542a7bc80f60bcc672ea58a2"
+    },
+    {
+      "path": "work/oulad_experiment/run_primary.py",
+      "bytes": 16153,
+      "sha256": "93f3bc9d9e7d0a6c23925410b1c9a9ab4214c94ac82235e79c97dc5b40f3ccfd"
+    },
+    {
+      "path": "work/oulad_experiment/verify_rebuild.py",
+      "bytes": 2103,
+      "sha256": "f9cec7afba2eb7ba87768b03e59cadfcaebc0b9c6b080f5bc6948dd3d5991d69"
+    },
+    {
+      "path": "work/review_round3_20261014/analyze_results.py",
+      "bytes": 11136,
+      "sha256": "08d0e573e0a5777033f3883431b9da34f2967917c531b6dfcd6513defc2e638f"
+    },
+    {
+      "path": "work/review_round3_20261014/audit_boundaries.py",
+      "bytes": 3122,
+      "sha256": "e6d31b2521aff935db5b020f7eb0d42735ef48ad44f25d96de6032008e1bd89b"
+    },
+    {
+      "path": "work/review_round3_20261014/audit_preparation.py",
+      "bytes": 2450,
+      "sha256": "65451d395177905cbf2a37b9b9838e1dc95f2f78914e70a5b14eb14888c8dc27"
+    },
+    {
+      "path": "work/review_round3_20261014/build_evidence.py",
+      "bytes": 16152,
+      "sha256": "ee388fdfb993ecdef780dc3354adb43629070352d4aec08afffdcfc150949d36"
+    },
+    {
+      "path": "work/review_round3_20261014/make_figures.py",
+      "bytes": 4802,
+      "sha256": "aba576311fdf35635aee56f323a24c27f25185106824f1e39fcdbfbeab77b483"
+    },
+    {
+      "path": "work/review_round3_20261014/monte_carlo_check.py",
+      "bytes": 1826,
+      "sha256": "3ccf65f3236e9479375031ef8e99b6e27c7831af167c801ff6cee4eda6bd23ed"
+    },
+    {
+      "path": "work/review_round3_20261014/protocol.json",
+      "bytes": 4351,
+      "sha256": "234c8cd7d4ffbbd0981792f7005a73b4c31a51bdae2a3997a6f5d376c1767d6a"
+    },
+    {
+      "path": "work/review_round3_20261014/reproduce_r3.py",
+      "bytes": 4382,
+      "sha256": "4244391e6f01bdf17b8c8c2db8f70a642403b5cb6b75351cc25a2546b644eac7"
+    },
+    {
+      "path": "work/review_round3_20261014/run_study.py",
+      "bytes": 7150,
+      "sha256": "02959984675f542bb54d1f0569e4c1c77714904ba2557acf12d5a92f0bebb124"
+    },
+    {
+      "path": "work/xuetangx_experiment4/analyze_courses.py",
+      "bytes": 6274,
+      "sha256": "0437ea17abc74adde1d54fcab6ea74f22493129e9ea201327a2ef659decf3f25"
+    },
+    {
+      "path": "work/xuetangx_experiment4/analyze_gap_supplement.py",
+      "bytes": 8208,
+      "sha256": "178ad0e1275eda0b5569bfcf306b4401721c7586bf46ef84bd5d51095aa5f69b"
+    },
+    {
+      "path": "work/xuetangx_experiment4/analyze_primary.py",
+      "bytes": 7751,
+      "sha256": "9237e35d0cdc9987f5ff0cbdb15bd55c04092a5426152bb0d5f5204fcb257d04"
+    },
+    {
+      "path": "work/xuetangx_experiment4/audit.py",
+      "bytes": 9319,
+      "sha256": "05b4065bfda637b59950524280e08fcbb6c6fd97dc99d81ff336eab3672fa266"
+    },
+    {
+      "path": "work/xuetangx_experiment4/common_pair_sensitivity.py",
+      "bytes": 5798,
+      "sha256": "6875a459f7dfc35fca33a9b4032a1bb1529b90310b85b2eff730a06f65b7ab06"
+    },
+    {
+      "path": "work/xuetangx_experiment4/conservative_reporting.py",
+      "bytes": 7620,
+      "sha256": "5a4dfc09d1269a397a48f219394f3795482d77274c42152957381d5e1ffc3ebf"
+    },
+    {
+      "path": "work/xuetangx_experiment4/conservative_updates.py",
+      "bytes": 12421,
+      "sha256": "522159f306ec6ffccb6b91c79a50a05effdabdbbde853e7dbe44c1e77eeaa2e9"
+    },
+    {
+      "path": "work/xuetangx_experiment4/dfmc_robustness.py",
+      "bytes": 5361,
+      "sha256": "2fe0111569da668d3946fc30c26a7dd7c250c2b5b65936760a679cb4825c68b0"
+    },
+    {
+      "path": "work/xuetangx_experiment4/earliest_latest.py",
+      "bytes": 4454,
+      "sha256": "2c25ed67fcf5c2e55d2d2287d27426610ee9533762501cff247c3323eba283e9"
+    },
+    {
+      "path": "work/xuetangx_experiment4/features.py",
+      "bytes": 6597,
+      "sha256": "2fe05cb6ddf1c8bb36716e384c242d1e715eeb5277770da01f8d0eabbb1b1e70"
+    },
+    {
+      "path": "work/xuetangx_experiment4/future_endpoint_refit.py",
+      "bytes": 3286,
+      "sha256": "89e461d14fbb242f82a32b9c86c3221e8683041d5948eff1b880542b0541f951"
+    },
+    {
+      "path": "work/xuetangx_experiment4/history_controls.py",
+      "bytes": 4081,
+      "sha256": "a08731049f1913118f24ffb6e49f0279aa2670b0f6a932ad89886b76187cf015"
+    },
+    {
+      "path": "work/xuetangx_experiment4/identity_refit.py",
+      "bytes": 10264,
+      "sha256": "94ecc10054758470c72a7c6bef5d93377ee3aa326a57260d3b2ea6a6a4be95f1"
+    },
+    {
+      "path": "work/xuetangx_experiment4/label_window_audit.py",
+      "bytes": 6143,
+      "sha256": "63753fdeec04f70dcd7e655dfab465a8e7c002441f00ba0c324de34e9b079d51"
+    },
+    {
+      "path": "work/xuetangx_experiment4/mechanisms.py",
+      "bytes": 4956,
+      "sha256": "55a23a6fd78dcb4fb390a2551b1fa1bec528390e7af4f61ac66e45e70c7f73fb"
+    },
+    {
+      "path": "work/xuetangx_experiment4/meta.py",
+      "bytes": 4799,
+      "sha256": "80b1f8e94b57fb09e790401487c2280284725e941712560021083c7a5da6f72b"
+    },
+    {
+      "path": "work/xuetangx_experiment4/p0_freeze.py",
+      "bytes": 7021,
+      "sha256": "c33c5a445688bcd943d3ca40ba47c7f24a12f34f9048f36ec39656fd3d363324"
+    },
+    {
+      "path": "work/xuetangx_experiment4/primary.py",
+      "bytes": 17624,
+      "sha256": "fcf1ea6ecfb4c5583586b37aa43e4696e102f5efba6252a986347f45648da8f3"
+    },
+    {
+      "path": "work/xuetangx_experiment4/review_diagnostics.py",
+      "bytes": 8875,
+      "sha256": "2f901a1b4b020446f690ad11ae15b26cdb0a8e9d1fe1b55885d48ea1a5ec4b22"
+    },
+    {
+      "path": "work/xuetangx_experiment4/review_evidence.py",
+      "bytes": 13062,
+      "sha256": "6a50b85bd213778e79736602f10bcd007c712689e7fb4eb14bd733832936fb3f"
+    },
+    {
+      "path": "work/xuetangx_experiment4/review_extension.py",
+      "bytes": 13206,
+      "sha256": "c295674a99ba9965fd09a0cd3a8ab5bf3581243c38acc11e1390f06aeca0445f"
+    },
+    {
+      "path": "work/xuetangx_experiment4/review_reporting.py",
+      "bytes": 4325,
+      "sha256": "d0a18e3f39b842c5db1e772987780ff42fdaa0c645e1f75491991638c295d9e7"
+    },
+    {
+      "path": "work/xuetangx_experiment4/roles.py",
+      "bytes": 4278,
+      "sha256": "b19c8a1f0fb85affd6c6bdbaec46a7c6a43064500e2e9a393794896493d4c163"
+    },
+    {
+      "path": "work/xuetangx_experiment4/run_integrity.py",
+      "bytes": 1224,
+      "sha256": "b1908b69057e824080a1a0b564014b7b9c353557c3f9c35de9abd03fff262843"
+    },
+    {
+      "path": "work/xuetangx_experiment4/secondary_calibration.py",
+      "bytes": 7508,
+      "sha256": "c44fbebd9b6130e99a7fea6464c5c7b86f767b8c45226c17a8053d80cef3bef2"
+    },
+    {
+      "path": "work/xuetangx_experiment4/smoke_job.py",
+      "bytes": 1266,
+      "sha256": "9f3e831ae429ebb7262d81da5a20132504ea3a8b108fb467e7df0e5270ef5010"
+    },
+    {
+      "path": "work/xuetangx_experiment4/summarize_dfmc.py",
+      "bytes": 2126,
+      "sha256": "8edaf22bb31c029250d603c2b1b393ea685a60835356975cb3da85b10b4c8fc1"
+    },
+    {
+      "path": "work/xuetangx_experiment4/summarize_robustness.py",
+      "bytes": 3944,
+      "sha256": "cfa008e8667c2ddeb453e4da12f4fd7e42cab89dcd7cf91661817bc2de9a8ebd"
+    },
+    {
+      "path": "work/xuetangx_experiment4/supplement_protocol.json",
+      "bytes": 2137,
+      "sha256": "199d30709edd97e114a95c88b0e1bd3d69bd01a77cd5cf87bde718cf6ada5b6e"
+    },
+    {
+      "path": "work/xuetangx_experiment4/unique_user_course_sensitivity.py",
+      "bytes": 11548,
+      "sha256": "e0611ed04a2020f5fe3261cda8dea030de27e0eae21865e220f1f00a92e971ed"
+    },
+    {
+      "path": "work/xuetangx_experiment4/zero_fill.py",
+      "bytes": 2921,
+      "sha256": "ca113eff29135429bb8ffd6995001b7312a698a57e69f7d810be90d9c7463502"
+    }
+  ],
+  "validation_summary": {
+    "quick": "passed",
+    "aggregate_payloads": 170,
+    "population_update_comparisons": 288,
+    "runtime_guard_tests_passed": 12,
+    "raw_data_refit_this_distribution": false
+  }
+}

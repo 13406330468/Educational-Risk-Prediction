@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Please cite this reproducibility package and the accompanying manuscript."
+title: "Calibration Transfer and Updating in Educational Risk Prediction: A Cross-Cohort Reliability Audit"
+type: software
+version: "2026.10.14"
+date-released: '2026-10-14'
+authors:
+  - family-names: Yu
+    given-names: Ling
+    affiliation: "Shandong Vocational and Technical University of International Studies"
+    orcid: "https://orcid.org/0009-0006-6656-5903"
+  - family-names: Yu
+    given-names: Li
+    affiliation: "Shandong Water Conservancy Vocational College"
+    orcid: "https://orcid.org/0009-0001-2229-2433"
+  - family-names: Ding
+    given-names: Minghua
+    affiliation: "Shandong Vocational and Technical University of International Studies"
+    orcid: "https://orcid.org/0009-0008-0229-5531"
+  - family-names: Sun
+    given-names: Wei
+    affiliation: "Shandong Vocational and Technical University of International Studies"
+    orcid: "https://orcid.org/0009-0009-2565-3554"
+  - family-names: Xing
+    given-names: Yuguang
+    affiliation: "Shandong Vocational and Technical University of International Studies"
+    orcid: "https://orcid.org/0009-0005-4925-7450"
+repository-code: "https://github.com/13406330468/Educational-Risk-Prediction"
+url: "https://github.com/13406330468/Educational-Risk-Prediction"
+abstract: "Analysis code and frozen aggregate evidence for calibration transfer and updating across educational cohorts, with current manuscript files and school-level author affiliations."
